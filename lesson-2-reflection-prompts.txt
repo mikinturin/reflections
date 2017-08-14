@@ -1,21 +1,25 @@
 What happens when you initialize a repository? Why do you need to do it?
-git creates the hidden directory and the files to track commits. I need to do this to start track changes
+*git creates the hidden directory and the files to track commits. I need to do this to start track changes
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
-stagng area is a subset of file to create a commit for: this is useful to create a commint of subset of the project, saving space and more logically correct
+*staging area is a subset of file to create a commit for: this is useful to create a commint of subset of the project, saving space and more logically correct
 
 How can you use the staging area to make sure you have one commit per logical
 change?
-first I can add files to staging area, then I can commit the entire staging area
+*first I can add files to staging area, then I can commit the entire staging area
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+*I should use branches when implementing a new feature or an experimental fix, or a new version of the software; branches helps keep organized repository with one different branch for each different new "experiment" (also with many programmers)
 
 How do the diagrams help you visualize the branch structure?
+*branch diagrams help figure out the structure of the repository, and also be aware of unreachable branches..
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+*the second branch will contain all the commits of the two. the diagram representation is usefult to see the history of the commits
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+git automatic merging can be dangerous as git don't know anything about the code and can lead to bugs; manual merge can lead to an overhead of unnecessary tests and verifications
